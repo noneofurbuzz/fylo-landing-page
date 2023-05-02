@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+}
+.container{
+    min-height: 100vh;
+    background-color: hsl(217, 28%, 15%);
+    width: 900px;
+    
+}
+header{
+    background-color: hsl(217, 28%, 15%);
+    vertical-align: middle;
+    padding: 30px;
+}
+@font-face {
+    font-family: railway;
+    src: url(fonts/Raleway-VariableFont_wght.ttf);
+}
+@font-face{
+    font-family: opensans;
+    src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    float: right;
+}
+.feature,.team,.sign{
+    display: inline;
+    vertical-align: middle;
+    margin: auto;
+}
+.feature a,.team a,.sign a{
+    text-align: center;
+    padding: 20px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    font-family: railway;
+    text-decoration: none;
+    margin: auto;
+}
+.feature a:active,.team a:active,.sign a:active{
+    text-decoration: underline;
+}
+.introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(217, 28%, 15%);
+    background-image: url("images/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position-y: bottom;
+  
+}
+.introduction img{
+    margin:auto;
+    max-width: 100%;
+   
+}
+.introduction button{
+    margin: auto;
+    text-align: center;
+}
+.introduction p{
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: opensans;
+    padding-left: auto;
+    padding-right: auto;
+}
+.p1{
+    font-weight: 700;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
