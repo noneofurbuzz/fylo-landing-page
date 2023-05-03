@@ -1,16 +1,5 @@
 body{
-    margin: 0;
-}
-.container{
-    min-height: 100vh;
-    background-color: hsl(217, 28%, 15%);
-    width: 900px;
-    
-}
-header{
-    background-color: hsl(217, 28%, 15%);
-    vertical-align: middle;
-    padding: 30px;
+    margin: 0;  
 }
 @font-face {
     font-family: railway;
@@ -20,59 +9,98 @@ header{
     font-family: opensans;
     src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
 }
-ul{
-    display: flex;
-    list-style-type: none;
-    float: right;
-}
-.feature,.team,.sign{
-    display: inline;
-    vertical-align: middle;
-    margin: auto;
-}
-.feature a,.team a,.sign a{
+.container{
+    background-color: hsl(217, 28%, 15%);
+    padding: 0 20px ;
     text-align: center;
-    padding: 20px;
+ 
+}
+nav{
+    padding: 0;   
+    float: right;
+    height: auto;
+}
+nav ul{
+    padding: 0;
+    height: auto;
+}
+nav ul li{
+    display: inline-block;
+    
+}
+.sign{
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.team{
+    padding-left: 10px;
+}
+nav ul li a{
+    text-decoration: none;
     color: hsl(0, 0%, 100%);
     font-weight: 400;
+    font-size: 11px;
     font-family: railway;
     text-decoration: none;
-    margin: auto;
-}
-.feature a:active,.team a:active,.sign a:active{
-    text-decoration: underline;
-}
-.introduction{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: hsl(217, 28%, 15%);
-    background-image: url("images/bg-curvy-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position-y: bottom;
+    height: auto;
+    white-space: nowrap;
   
+
 }
-.introduction img{
-    margin:auto;
+.container header{
+    display: flex;
+    justify-content: space-between;
     max-width: 100%;
-   
+    height: auto;
+
 }
-.introduction button{
-    margin: auto;
-    text-align: center;
+.container header img{
+    max-width: 100%;
+    object-fit: contain;
+    padding-top:33px;
+    height: 25px;
 }
-.introduction p{
-    margin: auto;
+.container .image{
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    background-color: hsl(217, 28%, 15%);
+    
+}
+.p1,.p2{
+    max-width: 100%;
     text-align: center;
     color: white;
     font-family: opensans;
-    padding-left: auto;
-    padding-right: auto;
+    margin: auto;
+    
+
 }
 .p1{
+    margin-top: 40px; ;
     font-weight: 700;
-    font-size: 30px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
+   
+  
+    
+}
+.p2{
+    font-size: 14px;
+    font-weight: 400;
+}
+.container button{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(198, 60%, 50%);
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    margin-top: 40px;
+    font-weight: 700;
+    padding: 15px 0;
+    width: 250px;
+
+}
+.container button:hover{
+    background-color: hsl(176, 68%, 64%);
 }
