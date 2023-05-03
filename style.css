@@ -11,9 +11,13 @@ body{
 }
 .container{
     background-color: hsl(217, 28%, 15%);
-    padding: 0 20px ;
+    padding: 0 20px;
     text-align: center;
- 
+    background-image: url("images/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 200% 60%;
+    background-position-y: bottom;
+    background-position-x: 65%;
 }
 nav{
     padding: 0;   
@@ -45,15 +49,16 @@ nav ul li a{
     text-decoration: none;
     height: auto;
     white-space: nowrap;
-  
-
+}
+nav ul li a:active{
+    text-decoration: underline;
 }
 .container header{
     display: flex;
     justify-content: space-between;
     max-width: 100%;
     height: auto;
-
+   
 }
 .container header img{
     max-width: 100%;
@@ -65,7 +70,7 @@ nav ul li a{
     max-width: 100%;
     height: auto;
     object-fit: contain;
-    background-color: hsl(217, 28%, 15%);
+    
     
 }
 .p1,.p2{
@@ -74,16 +79,12 @@ nav ul li a{
     color: white;
     font-family: opensans;
     margin: auto;
-    
-
 }
 .p1{
-    margin-top: 40px; ;
-    font-weight: 700;
-    padding-bottom: 20px;
-   
-  
     
+    margin-top: 40px; 
+    font-weight: 700;
+    padding-bottom: 20px;  
 }
 .p2{
     font-size: 14px;
@@ -98,9 +99,42 @@ nav ul li a{
     margin-top: 40px;
     font-weight: 700;
     padding: 15px 0;
-    width: 250px;
+    width: 220px;
+    font-family: opensans;
+}
+.container button:active{
+    background-color: hsl(176, 68%, 64%);
+}
+.main{
+    background-color: hsl(218, 28%, 13%);
+    font-family: opensans;
+    color: hsl(0, 0%, 100%);
+    padding: 0 20px;
+}
+.main p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.main p{
+    max-width: 100%;
+    text-align: center;
 
 }
-.container button:hover{
-    background-color: hsl(176, 68%, 64%);
+.main h1{
+    max-width: 100%;
+    text-align: center;
+}
+.main img{
+    display: block;
+    margin: auto;
+    padding-top: 150px ;
+}
+.security img{
+    padding-top: 80px ;
+}
+.realtime img{
+    padding-top: 80px;
+}
+.store img{
+    padding-top: 80px;
 }
