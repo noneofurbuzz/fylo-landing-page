@@ -1,5 +1,6 @@
 body{
     margin: 0;  
+    background-color: hsl(218, 28%, 13%);
 }
 @font-face {
     font-family: railway;
@@ -109,7 +110,7 @@ nav ul li a:active{
     background-color: hsl(218, 28%, 13%);
     font-family: opensans;
     color: hsl(0, 0%, 100%);
-    padding: 0 20px;
+    padding: 5px 20px;
 }
 .main p{
     font-size: 14px;
@@ -137,4 +138,38 @@ nav ul li a:active{
 }
 .store img{
     padding-top: 80px;
+}
+.main-content{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(218, 28%, 13%);
+    justify-content: center;
+    align-items: center;
+    font-family: opensans;
+    color: hsl(0, 0%, 100%);
+    padding: 150px 20px;
+}
+.main-content img{
+    max-width: 100%;
+    margin: auto;
+    display: block;
+    padding-bottom: 50px;
+}
+.main-content p{
+    font-size: 14px;
+    font-weight: 400;
+}
+.main-content a{
+    text-decoration-thickness: 1px;
+    text-underline-offset: 8px;
+    font-size: 14px;
+    color: hsl(176, 68%, 64%);
+}
+.main-content a img{
+    margin: 0px;
+    position: relative;
+    bottom:15px;
+}
+.main-content a:hover{
+    color: hsl(0, 0%, 100%) ;
 }
