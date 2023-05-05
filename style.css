@@ -203,6 +203,7 @@ nav ul li a:active{
     padding: 0 20px;
     font-family: opensans;
     color: hsl(0, 0%, 100%);
+    margin-bottom: 200px;
 }
 .profile1{
     margin-bottom: 40px;
@@ -273,4 +274,75 @@ nav ul li a:active{
     padding: 0;
     align-items: center;
     margin-top: -45px;
+}
+.early-access{
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    padding: 0 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: hsl(217, 28%, 15%);
+    border-radius: 10px;
+    max-width: 80%;
+    margin: auto;
+}
+.input{
+    padding: 0 10px;
+    margin: 0;
+}
+.early-access h1{
+    font-family: railway;
+    text-align: center;
+    max-width: 100%;
+}
+.early-access p{
+    font-family: opensans;
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 35px;
+    max-width: 100%;
+}
+.email{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 30px;
+    padding: 20px 40px;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border: none;
+    font-family: railway;
+    font-size: 14px;
+    text-align: start;
+    font-weight: 400;
+    margin-bottom:30px ;
+}
+.email::placeholder{
+    font-size: 14px;
+    font-family: railway;
+    font-weight: 400;
+
+}
+.start{
+    background-color: hsl(198, 60%, 50%);
+    border-radius: 30px;
+    padding: 20px 60px;
+    max-width: 100%;
+    border: none;
+    font-family: railway;
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-family: railway;
+    height: auto;
+    margin: auto;
+}
+.action{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
