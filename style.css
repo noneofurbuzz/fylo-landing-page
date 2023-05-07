@@ -526,6 +526,7 @@ footer a:active{
         flex-direction: row;
         margin-bottom: -30px;
         width: 100%;
+        position: relative;
     }
 
     .email{
@@ -539,21 +540,16 @@ footer a:active{
         max-width: 220px;  
     }
     #validation{
-        padding: 0;
-        margin-top: -22px;
-        margin-bottom: 0px;
-        font-size: 11px;
-        justify-self: auto;
-        align-self: start;
-        display: block;
+        display: none;
+        position: absolute;
+        top: 85px;
+        left: 43px;
         
     }
     #thank-you{
-        padding: 0;
-        margin-top: -22px;
-        margin-bottom: 0px;
-        font-size: 11px;
-        display: none;
+        position: absolute;
+        top: 85px;
+        left: 43px;
     }
 }
 @media screen and (min-width : 600px){
