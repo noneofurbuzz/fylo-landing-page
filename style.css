@@ -2,6 +2,7 @@ body{
     margin: 0;  
     background-color: hsl(218, 28%, 13%);
 }
+
 @font-face {
     font-family: railway;
     src: url(fonts/Raleway-VariableFont_wght.ttf);
@@ -71,8 +72,6 @@ nav ul li a:active{
     max-width: 100%;
     height: auto;
     object-fit: contain;
-    
-    
 }
 .p1,.p2{
     max-width: 100%;
@@ -119,11 +118,8 @@ nav ul li a:active{
 .main p{
     font-size: 14px;
     font-weight: 400;
-}
-.main p{
     max-width: 100%;
     text-align: center;
-
 }
 .main h1{
     max-width: 100%;
@@ -203,28 +199,30 @@ nav ul li a:active{
     padding: 0 20px;
     font-family: opensans;
     color: hsl(0, 0%, 100%);
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 .profile1{
     margin-bottom: 40px;
     padding-top: 70px;
-    z-index: 1;
-    position: relative;
     box-shadow: 0px 1px 9px 1px hsl(219, 30%, 18%);
-    
+    position: relative;
+    z-index: 1;
 }
 .quotes{
-    width: 1000px;
-    z-index: 0;
     position: relative;
+    margin-bottom: -20px;
+    width: 84%;
+    z-index: -1;
+    background-color: hsl(219, 30%, 18%);
+    max-width: 100%;
+    border-radius: 10px;
+    padding-top: 20px;
     visibility: hidden;
-    top: 17px;
-    padding: 0;
-    right: 25px;
 }
-.quotes img{
-   visibility:visible;
 
+.quotes img{
+    max-width: 100%;
+    visibility:visible;
 }
 .profile2{
     margin-bottom: 40px;
@@ -245,11 +243,13 @@ nav ul li a:active{
 }
 .testimonials li{
     list-style-type: none;
+    white-space: nowrap;
     font-family: opensans;
 }
 .name{
     font-size: 14px;
     font-weight: bolder;
+    letter-spacing: 1px;
 }
 .title{
     font-weight: 400;
@@ -259,8 +259,9 @@ nav ul li a:active{
     font-size: 12px;
     max-width: 100%;
     font-weight: 400;
+    letter-spacing: 1px;
 }
-.testimonials div{
+.testimonials1 div{
     background-color: hsl(219, 30%, 18%);
     max-width: 80%;
     padding: 0 20px;
@@ -272,8 +273,15 @@ nav ul li a:active{
     flex-direction: row;
     margin-left: -20px;
     padding: 0;
+    max-width: 100%;
     align-items: center;
     margin-top: -45px;
+}
+.testimonials1{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
 }
 .early-access{
     color: hsl(0, 0%, 100%);
@@ -286,6 +294,11 @@ nav ul li a:active{
     border-radius: 10px;
     max-width: 80%;
     margin: auto;
+    padding-bottom: 40px;
+    position: relative;
+    z-index: 1;
+    transform: translateY(50%);
+    box-shadow: 0px 1px 8px 0px hsl(0, 0%, 0%);
 }
 .input{
     padding: 0 10px;
@@ -319,6 +332,22 @@ nav ul li a:active{
     font-weight: 400;
     margin-bottom:30px ;
 }
+#validation{
+    padding: 0;
+    margin-top: -22px;
+    color: hsl(0, 100%, 63%);
+    margin-bottom: 0px;
+    font-size: 11px;
+    display: none;
+}
+#thank-you{
+    padding: 0;
+    margin-top: -22px;
+    color: hsl(0, 100%, 63%);
+    margin-bottom: 0px;
+    font-size: 11px;
+    display: none;
+}
 .email::placeholder{
     font-size: 14px;
     font-family: railway;
@@ -344,5 +373,286 @@ nav ul li a:active{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
+.start:active{
+    background-color: hsl(176, 68%, 64%);
+}
+.instagram{
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    color: hsl(0, 0%, 100%);
+}
+.linkedin{
+    padding: 5px;
+    width: 15px;
+    height: 15px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    overflow: visible;
+    color: hsl(0, 0%, 100%);
+}
+.github{
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    color: hsl(0, 0%, 100%);
+}
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(218, 28%, 13%);
+    font-family: opensans;
+    color: hsl(0, 0%, 100%);
+    padding: 0 20px;
+    background-color: hsl(216, 53%, 9%);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 250px;
+    background-color: hsl(216, 53%, 9%);
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+.footer-image{
+    max-width: 120px;
+    padding: 0 20px;
+}
+
+footer li{
+    display: block;
+    list-style-type: none;
+    padding-top: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+}
+.about{
+    white-space: nowrap;
+}
+.social li{
+    display: inline-block;
+}
+.social{
+    align-self:center;
+}
+footer ul{
+    padding: 0;
+}
+.icon{
+    vertical-align: middle;
+    padding-right: 20px;
+}
+.dummy-text{
+    padding-top: 25px;
+    margin-bottom: -25px;
+}
+.social ul li a{
+    padding-left: 5px;
+}
+footer a:active{
+    font-weight: 700;
+}
+.social svg:active path{
+    fill: hsl(176, 68%, 64%);
+}
+.github:active{
+    border-color: hsl(176, 68%, 64%);
+}
+.linkedin:active{
+    border-color: hsl(176, 68%, 64%);
+}
+.instagram:active{
+    border-color: hsl(176, 68%, 64%);
+}
+@media screen and (min-width : 480px){
+    .container .p1{
+        width: 480px;
+    }
+    .container .p2{
+        width: 480px;
+    }
+}
+@media screen and (min-width : 900px){
+    nav ul li a{
+        font-size: 14px;
+    }
+    .sign{
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+    .team{
+        padding-left: 45px;
+    }
+    .main-content{
+        flex-direction: row;
+    }
+    .main-content p{
+        width:500px;
+    }
+    .main-content h1{
+        font-size: 40px;
+        width: 370px;
+        margin-top: -50px;
+    }
+    .productive{
+        padding-left: 70px;
+    }
+    .testimonials1{
+        display: flex;
+        flex-direction: row;
+        column-gap: 40px;
+        max-width: 75%;
+    }
+    .profile3{
+        margin-bottom: 40px;
+    }
+    .quotes{
+        width: 88%;
+    }
+    .early-access{
+        width: 60%;
+    }
+    .action{
+        flex-direction: row;
+        margin-bottom: -30px;
+        width: 100%;
+    }
+
+    .email{
+        width: 90%;
+        margin-right: 40px;
+    }
+    .start{
+        margin-bottom:30px ;
+    }
+    .footer-image{
+        max-width: 220px;  
+    }
+    #validation{
+        padding: 0;
+        margin-top: -22px;
+        margin-bottom: 0px;
+        font-size: 11px;
+        justify-self: auto;
+        align-self: start;
+        display: block;
+        
+    }
+    #thank-you{
+        padding: 0;
+        margin-top: -22px;
+        margin-bottom: 0px;
+        font-size: 11px;
+        display: none;
+    }
+}
+@media screen and (min-width : 600px){
+    .sign{
+        padding-left: 45px;
+    }
+    .team{
+        padding-left: 45px;
+    }
+    .container header img{
+        height: 45px;
+        padding-top:25px;
+    }
+    .container .image{
+        max-width: 70%;
+        height: auto;
+        object-fit: contain;
+    }
+    
+}
+@media screen and (min-width :800px ){
+    .main{
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+    }
+    .security img{
+        padding-top: 140px;
+    }
+    .store img{
+        padding-top: 87px;
+    }
+    .main p{
+        width:375px;
+        text-align: center;
+        margin: auto;
+    }
+}
+@media screen and (min-width:950px) {
+    .quotes{
+        width: 84%;
+    }
+}
+@media screen and (min-width:990px) {
+    .quotes{
+        width: 80%;
+    }
+}
+@media screen and (min-width:1035px) {
+    .quotes{
+        width: 77%;
+    }
+}
+@media screen and (min-width:1072px) {
+    .quotes{
+        width: 76%;
+    }
+}
+@media screen and (min-width:834px){
+    .footer-image{
+        max-width: 220px;  
+        padding-left: 8%;
+        visibility: visible;
+    }
+    .container-footer{
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        padding-left: 0;
+        margin-left: 0px;
+        padding-right: 0;
+    }
+    .social{
+        align-self: start;
+    }
+    .dummy-text{
+        width: 300px;
+        margin-right: -20px;
+    }
+    .dummy-text p{
+        margin: 0;
+    }
+    footer{
+        justify-content: center;
+        max-width: 100%;
+    }
+    .footerimage{
+        background-color: aqua;
+        align-self:center;
+        position: relative;
+        right: 36.1%;
+        visibility: hidden;
+        max-width: 100%;
+    }
+    footer li{
+        display: block;
+        list-style-type: none;
+        padding-top: -10px;
+        white-space: nowrap;
+    }
+}
+
